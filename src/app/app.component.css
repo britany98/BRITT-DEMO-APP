@@ -1,0 +1,158 @@
+:host {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 20px;
+    color: #333;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 8px 0;
+  }
+
+
+
+  p {
+    margin: 0;
+  }
+
+  .spacer {
+    flex: 1;
+  }
+
+  .toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 210, 60);
+    color: white;
+    font-weight: 600;
+  }
+
+  .toolbar img {
+    margin: 0 16px;
+  }
+
+  .toolbar #twitter-logo {
+    height: 50px;
+    margin: 0 8px;
+  }
+
+  .toolbar #youtube-logo {
+    height: 50px;
+    margin: 0 16px;
+  }
+
+  .toolbar #twitter-logo:hover,
+  .toolbar #youtube-logo:hover {
+    opacity: 0.8;
+  }
+
+  .content {
+    display: flex;
+    margin: 82px auto 32px;
+    padding: 0 16px;
+    max-width: 960px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-container {
+    margin:auto;
+    justify-content: left;
+    margin-top: 16px;
+    width: 900px;
+  }
+
+  button{
+    margin: center;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-left: 200px;
+    background-color:rgb(18, 175, 175);
+    border-color: rgb(18, 175, 175);
+  }
+  button:hover{
+    background-color:rgb(28, 141, 141);
+    border-color: rgb(28, 141, 141);
+  }
+
+  #close{
+    background-color:rgb(255, 255, 255) !important;
+    border-color: rgb(255, 255, 255) !important;
+  }
+  
+  #cancel{
+    background-color:rgb(163,165,168) !important;
+    border-color: rgb(163,165,168) !important;
+    margin-left: 5%;
+  }
+  
+  #cancel:hover{
+    background-color:rgb(109,110,113) !important;
+    border-color: rgb(109,110,113) !important;
+  }
+
+  .table{
+    margin-top: 25px;
+  }
+    
+  input{
+    width: 350px;
+  }
+
+  select{
+    width: 350px;
+  }
+
+  footer {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    line-height: 20px;
+  }
+
+  footer a {
+    display: flex;
+    align-items: center;
+  }
+
+  /* Responsive Styles */
+  @media screen and (max-width: 767px) {
+    .card-container > *:not(.circle-link) ,
+    .terminal {
+      width: 100%;
+    }
+
+    .card:not(.highlight-card) {
+      height: 16px;
+      margin: 8px 0;
+    }
+
+    .card.highlight-card span {
+      margin-left: 72px;
+    }
+
+    svg#rocket-smoke {
+      right: 120px;
+      transform: rotate(-5deg);
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    svg#rocket-smoke {
+      display: none;
+      visibility: hidden;
+    }
+  }
+
